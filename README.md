@@ -1,71 +1,91 @@
-# Project 3 - Starter Kit - Symfony
+# Project 3 - EXTERNATIC
 
-Project Description
-This website is designed to allow candidates to search and apply for job offers in the field of IT. Users willing to apply can register, connect and bookmark offers. Candidates can upload CV, update their profile and locate offers on a map depending on their home and mobility.
+EXTERNATIC est un cabinet de recrutement spécialisé dans le domaine du numérique. Ils mettent en relation des entreprises avec des professionnels qualifiés tels que développeurs, ingénieurs informatiques et experts en cybersécurité. Leur expertise et leur réseau leur permettent d’identifier les talents adaptés aux besoins des entreprises. Externatic propose également des services de conseil en ressources humaines et en développement des talents. Leur connaissance pointue de l’industrie en fait un partenaire privilégié pour les entreprises à la recherche de compétences numériques.
 
-Externatic's consultants can reach job offers and check candidates' data in order to find the best match.
+## Développement du Site
 
-Admin can fully manage the website with dedicated pages that allows creation, update and deletion of candidates, consultants, companies and job offers.
+### Collaboration de 5 personnes | Durée de création : 5 semaines
 
+Dans le cadre de ce projet, une équipe de 5 personnes passionnées s'est réunie pour créer un site pour un cabinet de recrutement. Chaque membre de l'équipe avait un rôle spécifique défini afin de maximiser l'efficacité de notre collaboration.
 
-## TEAM
+Nous avons travaillé en étroite collaboration pendant une période de 5 semaines, en mettant en application nos connaissances techniques acquises dans les domaines du Symfony, PHP, du CSS et de Twig pour développer un site fonctionnel, convivial et attrayant.
 
-@AndressaaRibeiro
-@FouadTebi
-@Roger0753
-@HauvillerCedric
-@Sebus07
+### Besoins du client
 
+EXTERNATIC souhaitait une refonte de leur site internet, développer une application web et mobile à destination des candidats, liée au site Externatic.fr. Cet outil vient en complément et support de leur expertises de consultants en recrutement.
+Elle offre un accès à l’entreprise, au candidat et à l’administrateur. 
+Le site permet le partage d’offres d’emploi et offre la possibilité aux candidats d’uploader leurs fichiers, tels que le CV. Cela simplifie le processus de candidature et favorise une expérience fluide pour les postulants.
 
-### Prerequisites
+### Fonctionnalités
 
-1. Check composer is installed
-2. Check yarn & node are installed
+-	Espace candidat / entreprise / admin avec login.
+-	Un back-office pour gérer toutes les offres d’emploi ainsi l’enregistrement des entreprises (notamment pour valider ou supprimer un compte entreprise).
+-	 Navigation fluide entre toutes les pages du site avec une expérience utilisateur optimale.
+-	Recherche multicritère pour le candidat / Présentation des offres et quelques partenaires.
+-	Prise en compte du statut du visiteur non connecté.
 
-### Install
+### Travail personnel
 
-1. Clone this project
-2. Run `composer install`
-3. Run `yarn install`
-4. Run `yarn encore dev` to build assets
+Pour ce projet j'ai réalisé la page d'offres d'emploi en totalité, soit côté front ou back.
 
-### Working
+- Réalisation du CRUD adéquate de cette page avec le framework Symfony.
 
-1. Run `symfony server:start` to launch your local php web server
-2. Run `yarn run dev --watch` to launch your local server for assets (or `yarn dev-server` do the same with Hot Module Reload activated)
+- Création de la Dashboard candidat ainsi entreprise avec du Twig, scss et du JS.
 
-### Windows Users
+- Mise en place du dark mode en scss et JS.
 
-If you develop on Windows, you should edit you git configuration to change your end of line rules with this command:
+- Mise en place de la sécurité du formulaire de connexion et d'inscription.
+
+## Technologies Employées
+
+- HTML/SCSS
+- Javascript
+- PHP
+- Symfony
+- TWIG / Doctrine
+- Composer / yarn
+- MySQL
+- Git/GitHub
+
+## Les étapes pour visualiser le projet
+
+Pour la visualisation du projet il faut suivre les étapes suivantes:
+
+1. Vérifier si composer est installé sur votre ordinateur
+2. Vérifier si yarn & node sont installés sur votre ordinateur
+
+### Après ces étapes
+
+1. Clonez le repository depuis Github.
+2. Exécuter la commande `composer install`
+3. Exécuter la commande `yarn install`
+4. Exécuter la commande `yarn encore dev` pour build les assets
+
+### Pour l'affichage
+
+1. Exécuter la commande `symfony server:start` pour lancer le serveur web php local
+2. Exécuter la commande `yarn run dev --watch` pour lancer votre serveur local de ressources (ou `yarn dev-server` faire de même avec Hot Module Reload activé)
+
+### Utilisateurs Windows
+
+Si vous développez sous Windows, vous devez éditer votre configuration git pour changer vos règles de fin de ligne avec cette commande:
 
 `git config --global core.autocrlf true`
 
-The `.editorconfig` file in root directory do this for you. You probably need `EditorConfig` extension if your IDE is VSCode.
+Le `.editorconfig` dans le répertoire racine. Vous avez probablement besoin de `EditorConfig` si votre IDE est VSCode.
 
-### Run locally with Docker
+### Exécuter localement avec Docker
 
-1. Fill DATABASE_URL variable in .env.local file with
+1. Remplir DATABASE_URL variable en .env.local avec le fichier
 `DATABASE_URL="mysql://root:password@externatic:3306/<choose_a_db_name>"`
-2. Install Docker Desktop an run the command:
+2. Installez Docker Desktop et exécutez la commande:
 ```bash
 docker-compose up -d
 ```
-3. Wait a moment and visit http://localhost:8000
+3. Attendez un peu et visitez http://localhost:8000
 
+## Contrôle qualité
 
-## Deployment
-
-Some files are used to manage automatic deployments (using tools as Caprover, Docker and Github Action). Please do not modify them.
-
-* [Dockerfile](/Dockerfile) Web app configuration for Docker container
-* [docker-entry.sh](/docker-entry.sh) shell instruction to execute when docker image is built
-* [nginx.conf](/ginx.conf) Nginx server configuration
-* [php.ini](/php.ini) Php configuration
-
-
-## Built With
-
-* [Symfony](https://github.com/symfony/symfony)
 * [GrumPHP](https://github.com/phpro/grumphp)
 * [PHP_CodeSniffer](https://github.com/squizlabs/PHP_CodeSniffer)
 * [PHPStan](https://github.com/phpstan/phpstan)
@@ -73,32 +93,9 @@ Some files are used to manage automatic deployments (using tools as Caprover, Do
 * [ESLint](https://eslint.org/)
 * [Sass-Lint](https://github.com/sasstools/sass-lint)
 
+## Me contacter
 
+Pour plus de renseignements contactez-moi sur [LinkedIn](https://www.linkedin.com/in/fouadtebi/), je suis plus réactif.
 
-
-## License
-
-MIT License
-
-Copyright (c) 2019 aurelien@wildcodeschool.fr
-
-Permission is hereby granted, free of charge, to any person obtaining a copy
-of this software and associated documentation files (the "Software"), to deal
-in the Software without restriction, including without limitation the rights
-to use, copy, modify, merge, publish, distribute, sublicense, and/or sell
-copies of the Software, and to permit persons to whom the Software is
-furnished to do so, subject to the following conditions:
-
-The above copyright notice and this permission notice shall be included in all
-copies or substantial portions of the Software.
-
-THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR
-IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,
-FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE
-AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER
-LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
-OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
-SOFTWARE.
-
-## Acknowledgments
+**Merci**.
 
